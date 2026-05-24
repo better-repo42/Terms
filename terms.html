@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>Terms of Service — ClassTrack</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+<style>
+/* ── DARK THEME (default) ── */
+:root {
+  --primary: #6c63ff;
+  --primary-dim: rgba(108,99,255,0.15);
+  --bg: #0d0f1a;
+  --card: #151829;
+  --card2: #1c2035;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.13);
+  --txt: #f1f5f9;
+  --txt2: rgba(241,245,249,0.55);
+  --txt3: rgba(241,245,249,0.30);
+  --font: 'Nunito', sans-serif;
+  --shadow: 0 4px 24px rgba(0,0,0,0.5);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+/* ── LIGHT THEME ── */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #eeeaf8;
+    --card: #faf9ff;
+    --card2: #e8e4f5;
+    --border: rgba(108,99,255,0.10);
+    --border2: rgba(108,99,255,0.18);
+    --txt: #1a1040;
+    --txt2: rgba(26,16,64,0.55);
+    --txt3: rgba(26,16,64,0.32);
+    --shadow: 0 4px 24px rgba(108,99,255,0.12);
+  }
+}
+
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--txt);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+button{cursor:pointer;border:none;background:none;font-family:var(--font);}
+
+/* ── HEADER ── */
+.legal-header{
+  display:flex;align-items:center;gap:10px;
+  padding:0 16px;height:52px;
+  padding-top:env(safe-area-inset-top,0px);
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+  flex-shrink:0;
+  position:sticky;top:0;z-index:10;
+}
+.legal-back-btn{
+  width:34px;height:34px;border-radius:10px;
+  background:var(--card2);border:none;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  text-decoration:none;
+}
+.legal-back-btn svg{width:18px;height:18px;fill:var(--txt2);}
+.legal-title{font-size:15px;font-weight:900;letter-spacing:-0.3px;flex:1;}
+
+/* ── BODY ── */
+.legal-body{
+  flex:1;
+  padding:20px 18px;
+  max-width:680px;
+  width:100%;
+  margin:0 auto;
+  padding-bottom:calc(env(safe-area-inset-bottom,0px) + 32px);
+}
+
+.legal-app-badge{
+  display:flex;align-items:center;gap:12px;
+  background:var(--card);border-radius:14px;padding:14px;
+  border:1px solid var(--border);margin-bottom:20px;
+}
+.legal-app-icon{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.legal-app-icon svg{width:22px;height:22px;fill:#fff;}
+.legal-app-name{font-size:14px;font-weight:900;}
+.legal-app-sub{font-size:10px;font-weight:600;color:var(--txt2);margin-top:2px;}
+
+.legal-section{margin-bottom:20px;}
+.legal-section-title{
+  font-size:12px;font-weight:900;letter-spacing:0.6px;text-transform:uppercase;
+  color:var(--primary);margin-bottom:8px;
+}
+.legal-text{font-size:12px;font-weight:600;color:var(--txt2);line-height:1.65;}
+.legal-list{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
+.legal-list-item{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:12px;font-weight:600;color:var(--txt2);line-height:1.5;
+}
+.legal-list-item::before{
+  content:'•';color:var(--primary);font-weight:900;flex-shrink:0;
+}
+.legal-last-updated{
+  font-size:10px;font-weight:700;color:var(--txt3);
+  text-align:center;padding:16px 0 8px;
+}
+.legal-divider{height:1px;background:var(--border);margin:14px 0;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <!--
+    Back button: یہ آپ کے main app کے URL پر لے جائے گا
+    REPLACE "YOUR_APP_URL_HERE" with your actual app URL e.g. "index.html" or "https://yourapp.com"
+  -->
+  <a class="legal-back-btn" href="javascript:void(0)" onclick="history.back()" aria-label="Back">
+    <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+  </a>
+  <div class="legal-title">Terms of Service</div>
+</div>
+
+<!-- BODY -->
+<div class="legal-body">
+
+  <div class="legal-app-badge">
+    <div class="legal-app-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9 12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+    </div>
+    <div>
+      <div class="legal-app-name">ClassTrack</div>
+      <div class="legal-app-sub">Terms of Service</div>
+    </div>
+  </div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Acceptance of Terms</div>
+    <div class="legal-text">By using ClassTrack, you agree to these Terms of Service. If you do not agree, please discontinue use of the application.</div>
+  </div>
+
+  <div class="legal-divider"></div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Permitted Use</div>
+    <div class="legal-text">ClassTrack is intended for use by educators, teachers, and school administrators for the purpose of tracking student attendance. You agree to use this app only for lawful purposes.</div>
+    <div class="legal-list">
+      <div class="legal-list-item">Use the app to manage attendance records for your classes</div>
+      <div class="legal-list-item">Ensure student data entered complies with your school's data policies</div>
+      <div class="legal-list-item">Do not use the app to store sensitive personal information beyond what is needed for attendance</div>
+    </div>
+  </div>
+
+  <div class="legal-divider"></div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Data Responsibility</div>
+    <div class="legal-text">Since all data is stored locally on your device, you are solely responsible for the security and backup of your attendance data. ClassTrack is not liable for any data loss resulting from browser data clearing, device changes, or app uninstallation.</div>
+  </div>
+
+  <div class="legal-divider"></div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Disclaimer of Warranties</div>
+    <div class="legal-text">ClassTrack is provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free operation. Use of the app is at your own risk.</div>
+  </div>
+
+  <div class="legal-divider"></div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Limitation of Liability</div>
+    <div class="legal-text">ClassTrack and its developers shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the application, including but not limited to data loss.</div>
+  </div>
+
+  <div class="legal-divider"></div>
+
+  <div class="legal-section">
+    <div class="legal-section-title">Changes to Terms</div>
+    <div class="legal-text">We reserve the right to update these terms at any time. Continued use of the app after changes constitutes acceptance of the new terms.</div>
+  </div>
+
+  <div class="legal-last-updated">Last updated: May 2025</div>
+
+</div><!-- /legal-body -->
+
+</body>
+</html>
